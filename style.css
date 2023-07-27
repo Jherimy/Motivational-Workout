@@ -1,34 +1,34 @@
 @font-face {
     font-family: "ConstellationTLProBold";
-    src: url("../fonts/Constellation TL Pro Bold.ttf") format("truetype");
+    src: url("./fonts/Constellation TL Pro Bold.ttf") format("truetype");
 }
 @font-face {
     font-family: "SuperwoodW00Regular";
-    src: url("../fonts/Superwood W00 Regular.ttf") format("truetype");
+    src: url("./fonts/Superwood W00 Regular.ttf") format("truetype");
 }
 @font-face {
     font-family: "InterLight";
-    src: url("../fonts/Inter Light.ttf") format("truetype");
+    src: url("./fonts/Inter Light.ttf") format("truetype");
 }
 @font-face {
     font-family: "InterRegular";
-    src: url("../fonts/Inter Regular.ttf") format("truetype");
+    src: url("./fonts/Inter Regular.ttf") format("truetype");
 }
 @font-face {
     font-family: "InterSemiBold";
-    src: url("../fonts/Inter Semi Bold.ttf") format("truetype");
+    src: url("./fonts/Inter Semi Bold.ttf") format("truetype");
 }
 @font-face {
     font-family: "InterBold";
-    src: url("../fonts/Inter Bold.ttf") format("truetype");
+    src: url("./fonts/Inter Bold.ttf") format("truetype");
 }
 @font-face {
     font-family: "InterExtraBold";
-    src: url("../fonts/Inter Extra Bold.ttf") format("truetype");
+    src: url("./fonts/Inter Extra Bold.ttf") format("truetype");
 }
 @font-face {
     font-family: "InterBlack";
-    src: url("../fonts/Inter Black.ttf") format("truetype");
+    src: url("./fonts/Inter Black.ttf") format("truetype");
 }
 
 
@@ -420,15 +420,15 @@ body::-webkit-scrollbar{
 }  
 
 .intensityContainer .choicesContainer div:nth-child(1) {
-    background-image: url("../images/choice-LW.png");
+    background-image: url("./images/choice-LW.png");
 }
 
 .intensityContainer .choicesContainer div:nth-child(2) {
-    background-image: url("../images/choice-KP.png");
+    background-image: url("./images/choice-KP.png");
 }
 
 .intensityContainer .choicesContainer div:nth-child(3) {
-    background-image: url("../images/choice-BM.png");
+    background-image: url("./images/choice-BM.png");
 }
 
 .intensityContainer .choicesContainer div h1 {
@@ -475,7 +475,7 @@ body::-webkit-scrollbar{
     display: none;
     justify-content: center;
     align-items: center; 
-    background: url("../images/list-background.png");
+    background: url("./images/list-background.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; /
@@ -606,7 +606,7 @@ body::-webkit-scrollbar{
 .exerciseContainer .exerciseHeaderContainer {
     width: 100vh;
     height: 25vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/exercise-background.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./images/exercise-background.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -708,7 +708,7 @@ body::-webkit-scrollbar{
     align-items: center;
     display: flex;
     border-radius: 2.5px;
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/exercise-background.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./images/exercise-background.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

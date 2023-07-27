@@ -71,16 +71,16 @@ function sexChoiceButton (clickedSex) {
     const buildMuscle = document.createElement("img");
 
     if (sexChoice.textContent === "MALE") {
-        loseWeight.src = "../images/male-LW.png";
-        keepToned.src = "../images/male-KT.png";
-        buildMuscle.src = "../images/male-BM.png";
+        loseWeight.src = "./images/male-LW.png";
+        keepToned.src = "./images/male-KT.png";
+        buildMuscle.src = "./images/male-BM.png";
         sex = "male";
     }
 
     else if (sexChoice.textContent === "FEMALE") {
-        loseWeight.src = "../images/female-LW.png";
-        keepToned.src = "../images/female-KT.png";
-        buildMuscle.src = "../images/female-BM.png";
+        loseWeight.src = "./images/female-LW.png";
+        keepToned.src = "./images/female-KT.png";
+        buildMuscle.src = "./images/female-BM.png";
         sex = "female";
     }
 
@@ -859,8 +859,8 @@ function dayChoiceButton (clickedDay) {
                 
                 newh1.textContent = i;
                 newh2.textContent = iValue;
-                newImg1.src = "../images/description-icon.png";
-                newImg2.src = "../exercises/"+newh1.textContent+".gif";    
+                newImg1.src = "./images/description-icon.png";
+                newImg2.src = "./exercises/"+newh1.textContent+".gif";    
 
                 newImg1.onclick = function () {
                     popUpContainer.style.display = "flex";
@@ -876,7 +876,7 @@ function dayChoiceButton (clickedDay) {
                     const popUphr = document.createElement("hr");
 
                     popUph1.textContent = i;
-                    popUpImg.src = "../exercises/"+popUph1.textContent+".gif"; 
+                    popUpImg.src = "./exercises/"+popUph1.textContent+".gif"; 
                     popUph2.textContent = "CLICK ANYWHERE TO CLOSE";
   
                     const popUpP = document.createElement("p");
@@ -903,7 +903,7 @@ function dayChoiceButton (clickedDay) {
         const restImg = document.createElement("img");
         const resth2 = document.createElement("h2");
 
-        restImg.src = "../images/rest-icon.png";
+        restImg.src = "./images/rest-icon.png";
         resth2.textContent = "YOU NEED TO GET SOME REST";
         restDiv.className = "restDay";
 
