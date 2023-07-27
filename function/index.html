@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MAIN</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="mainContainer">
+
+            <div class="startContainer" id="startContainer">
+                <div>
+                    <h1>MOTIVATIONAL RICE</h2>
+                    <h1>SLEEP</h1>
+                    <h1>WORKOUT</h1>
+                    <h1>REPEAT</h2>
+                    <img src="../Images/rendon-image.png">
+                </div>
+                <h2>WELCOME TO THE <br>MOTIVATIONAL FITNESS</h2>
+                <button onclick="startNextButton()">LET'S GET STARTED!</button>
+            </div>
+
+            <div class="disclaimerContainer" id="disclaimerContainer">
+                <div>
+                    <h2>HEALTH CONDITIONS AND WORKOUT PARTICIPATION</h2>
+                    <p><span>WELCOME!</span>Before engaging in any exercise or workout program, it is important to consult with a qualified 
+                        healthcare professional, such as a licensed physician or certified fitness trainer. This 
+                        disclaimer is intended to inform you about potential risks associated with exercise and to emphasize the importance of 
+                        obtaining professional medical advice, particularly if you have certain health conditions.</p>
+                    <div>
+                        <button onclick="disclaimerDeclineButton()">DECLINE</button>
+                        <button onclick="disclaimerAgreeButton()">AGREE</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/disclaimer-image.png"  >
+                </div>
+            </div>
+
+            <div class="infoContainer" id="infoContainer">
+                <img src="../images/back-icon.png" onclick="infoBackButton()">
+                <h2>LET US KNOW YOU BETTER</h2>
+                <button onclick="infoNextButton()">SKIP</button>
+                <p>Let us know you better to help boost your <br>workout results</p>
+                <form>
+                    <label for="age">AGE:</label>
+                    <input type="text" placeholder="  YR.">
+                    <label for="weight">WEIGHT:</label>
+                    <input type="text" placeholder="  KG.">
+                    <label for="height">HEIGHT:</label>
+                    <input type="text" placeholder="  FT.">
+                </form>
+                <button onclick="infoNextButton()">YUP, THAT'S ME! NEXT</button>
+            </div>
+
+            <div class="sexContainer" id="sexContainer">
+                <img src="../images/sex-icon.png">
+                <img src="../images/back-icon.png" onclick="sexBackButton()">
+                <h2>SELECT YOUR SEX</h2>
+                <div onclick="sexChoiceButton(this)">
+                    <h1>MALE</h1>
+                    <hr>
+                    <img src="../images/male-icon.png">
+                </div>
+                <div onclick="sexChoiceButton(this)">
+                    <h1>FEMALE</h1>
+                    <hr>
+                    <img src="../images/female-icon.png">
+                </div>
+            </div>
+
+            <div class="intensityContainer" id="intensityContainer">
+                <img src="../images/back-icon.png" onclick="intensityBackButton()">
+                <img src="../images/intensity-icon.png">
+                <h2>SELECT YOUR GOAL</h2>
+                <div class="choicesContainer" id="choicesContainer">
+                    <div id="loseWeightContainer" onclick="intensityChoiceButton(this)">
+                        <h1>LOSE<br>WEIGHT</h1>
+                        <hr>
+                        <h2>CLICK HERE TO START!</h2>
+                    </div>
+                    <div id="keepTonedContainer" onclick="intensityChoiceButton(this)">
+                        <h1>KEEP<br>TONED</h1>
+                        <hr>
+                        <h2>CLICK HERE TO START!</h2>
+                    </div>
+                    <div id="buildMuscleContainer" onclick="intensityChoiceButton(this)">
+                        <h1>BUILD<br>MUSCLE</h1>
+                        <hr>
+                        <h2>CLICK HERE TO START!</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listContainer" id="listContainer">
+                <img src="../images/reset-icon.png" onclick="listResetButton()">
+                <img src="../images/home-icon.png">
+                <div class="listHeaderContainer"></div>
+                <div class="daysContainer">
+                    <div onclick="dayChoiceButton(this)"><span>DAY</span> 1</div>
+                    <div onclick="dayChoiceButton(this)"><span>DAY</span> 2</div>
+                    <div onclick="dayChoiceButton(this)"><span>DAY</span> 3</div>
+                    <div onclick="dayChoiceButton(this)"><span>DAY</span> 4</div>
+                    <div onclick="dayChoiceButton(this)"><span>DAY</span> 5</div>
+                    <div onclick="dayChoiceButton(this)"><span>DAY</span> 6</div>
+                    <div onclick="dayChoiceButton(this)"><span>DAY</span> 7</div>
+                </div>
+                <div class="resetContainer">
+                    <h2>RESET YOUR PROGRAM?</h2>
+                    <button onclick="closeResetButton()">NO</button>
+                    <button onclick="resetButton()">YES</button>
+                </div>
+            </div>
+
+            <div class="exerciseContainer" id="exerciseContainer">
+                <div class="exerciseHeaderContainer"></div>
+                <div class="exerciseDivContainer"></div>
+                <div class="exerciseButtonContainer">
+                    <button onclick="exerciseBackButton()">BACK</button>
+                    <button onclick="exerciseDoneButton()" class="exerciseDoneContainer">DONE</button>
+                </div>
+            </div>
+            
+            <div class="popUpContainer" id="popUpContainer" onclick="popUpCloseButton()"></div>
+
+            <div class="doneContainer" id="doneContainer" onclick="doneButton()">
+                <img src="../images/done-icon.png">
+                <h1>CONGRATULATIONS TO FINISHING YOUR PROGRAM!</h1>
+                <hr>
+                <h2>CLICK ANYWHERE TO EXIT</h2>
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

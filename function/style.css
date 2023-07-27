@@ -1,0 +1,1218 @@
+@font-face {
+    font-family: "ConstellationTLProBold";
+    src: url("../fonts/Constellation TL Pro Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "SuperwoodW00Regular";
+    src: url("../fonts/Superwood W00 Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "InterLight";
+    src: url("../fonts/Inter Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: "InterRegular";
+    src: url("../fonts/Inter Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "InterSemiBold";
+    src: url("../fonts/Inter Semi Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "InterBold";
+    src: url("../fonts/Inter Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "InterExtraBold";
+    src: url("../fonts/Inter Extra Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "InterBlack";
+    src: url("../fonts/Inter Black.ttf") format("truetype");
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+
+.startContainer {  
+    background-color: #F5C441;
+    display: flex; /* display:flex */
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    width: 100vw;
+    height: 100vh; 
+    font-family: "ConstellationTLProBold", sans-serif;
+}
+
+.startContainer div {
+    position: relative;
+    height: 70vh;
+    width: 70vh;
+    border-bottom: 0.5vh solid black;
+}
+
+.startContainer div h1 {
+    position: absolute;
+}
+
+.startContainer div h1:nth-child(1) {
+    font-size: 4vh;
+    top: 10%;
+}
+
+.startContainer div h1:nth-child(2) {
+    font-size: 13vh;
+    top: 11%;
+}
+
+.startContainer div h1:nth-child(3) {
+    font-size: 6vh;
+    top: 30%;
+}
+
+.startContainer div h1:nth-child(4) {
+    font-size: 8vh;
+    top: 36.5%;
+}
+
+.startContainer div img {
+    position: absolute;
+    bottom: 0%;
+    right: -15%;
+    height: 110%;
+}
+
+.startContainer h2 {
+    text-align: center;
+    font-size: 4vh;
+}
+
+.startContainer button {
+    font-family: "SuperwoodW00Regular", sans-serif;
+    background-color: #404454;    
+    border: none;
+    border-radius: 5vh;
+    color: white;
+    cursor: pointer;
+    height: 6vh;
+    font-size: 2vh;
+    text-align: center;
+    width: 45vh;
+    position: relative;
+    top: 1vh;
+}
+
+.disclaimerContainer {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+.disclaimerContainer div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.disclaimerContainer div:nth-child(1) {
+    flex-direction: column;
+    margin-left: 5vw;
+    gap: 3%;
+    flex: 1.3;
+    height: 98vh;
+    top: 2vh;
+}
+
+.disclaimerContainer div h2 {
+    font-family: "InterBold", sans-serif;
+    font-size: 3vw;
+    width: 90%;
+}
+
+.disclaimerContainer div p {
+    width: 90%;
+    font-family: "InterRegular", sans-serif;
+    font-size: 1.5vw;
+    padding-bottom: 5%;
+    border-bottom: 2px solid black;
+}
+
+.disclaimerContainer div span {
+    font-family: "InterBold", sans-serif;
+    font-size: 3vw;
+}
+
+.disclaimerContainer div:nth-child(1) div {
+    width: 85%;
+    gap: 3%;
+}
+
+.disclaimerContainer div:nth-child(2) {
+    flex: 1;
+    margin-right: 5vw;
+}
+
+.disclaimerContainer div:nth-child(2) img {
+    width: 100%;
+}
+
+.disclaimerContainer div:nth-child(1) div button {
+    font-family: "SuperwoodW00Regular", sans-serif;
+    background-color: #404454;    
+    border: none;
+    border-radius: 5vw;
+    color: white;
+    cursor: pointer;
+    height: 3vw;
+    font-size: 1.25vw;
+    text-align: center;
+    position: relative;
+}
+
+.disclaimerContainer div div button:nth-child(1) {
+    flex: 1;
+}
+
+.disclaimerContainer div div button:nth-child(2) {
+    flex: 1.3;
+}
+
+.infoContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    gap: 5vh;
+    display: none;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+}
+
+.infoContainer img {
+    width: 4vh;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    cursor: pointer;
+}
+
+.infoContainer h2 {
+    position: relative;
+    font-family: "InterBlack", sans-serif;
+    font-size: 3vh;
+}
+
+.infoContainer button:nth-child(3) {
+    position: absolute;
+    font-family: "InterBold", sans-serif;
+    top: 5%;
+    right: 5%;
+    font-size: 3vh;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    opacity: 35%;
+}
+
+.infoContainer p {
+    font-family: "InterRegular", sans-serif;
+    position: relative;
+    font-size: 2.75vh;
+    bottom: 3vh;
+    text-align: center;
+}
+
+.infoContainer form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    width: 75vh;
+}
+
+.infoContainer label {
+    font-family: "InterBold", sans-serif;
+    width: 80%;
+    position: relative;
+    font-size: 3vh;
+}
+
+.infoContainer input {
+    font-family: "InterRegular", sans-serif;
+    position: relative;
+    font-size: 2vh;
+    width: 75%;
+    margin: 0.5% 0% 5% 0%;
+    padding: 1.5% 0% 1.5% 0%;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.infoContainer button:nth-child(6) {
+    font-family: "SuperwoodW00Regular", sans-serif;
+    background-color: #404454;    
+    border: none;
+    border-radius: 5vh;
+    color: white;
+    cursor: pointer;
+    height: 6vh;
+    font-size: 2vh;
+    text-align: center;
+    width: 45vh;
+    position: relative; 
+    top: 6vh;
+}
+
+.sexContainer {
+    display: none;
+    gap: 15vh;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;  
+    align-items: center;
+}
+
+.sexContainer img:nth-child(1) {
+    position: absolute;
+    height: 5vh;
+    top: 14.5vh;
+}
+
+.sexContainer img:nth-child(2) {
+    width: 4vh;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    cursor: pointer;
+}
+
+.sexContainer div {
+    background-color: #F5C441;
+    position: relative;
+    border-radius: 5px;
+    width: 35vw;
+    height: 20vw;
+    top: 5%;
+    transition: transform 0.3s ease;
+}
+
+.sexContainer div:nth-child(4) {
+    margin-left: 10%;
+}
+
+.sexContainer div:nth-child(5) {
+    margin-right: 10%;
+}
+
+.sexContainer hr {
+    background-color: black;
+    border: none;
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.sexContainer div img {
+    height: 110%;
+    position: absolute;
+    bottom: 0%;
+    left: 2%;
+    pointer-events: none;
+}
+
+.sexContainer div h1 {
+    position: absolute;
+    left: 50%;
+    color: white;
+    bottom: 9%;
+    z-index: 1;
+    font-size: 1.75vw;
+    font-family: "InterSemibold", sans-serif;
+}
+
+.sexContainer div:hover {
+    transform: scale(101%);
+}     
+
+.sexContainer h2 {
+    position: absolute;
+    top: 19vh;
+    font-family: "InterBlack", sans-serif;
+    font-size: 3vh;
+}
+
+.intensityContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: #404454;
+    display: none;
+    justify-content: center;
+    align-items: center;  
+}
+
+.intensityContainer img:nth-child(1) {
+    width: 4vh;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+.intensityContainer h2 {
+    position: absolute;
+    top: 19%;
+    font-family: "InterBlack", sans-serif;
+    color: white;
+    font-size: 3vh;
+}
+
+.intensityContainer img:nth-child(2) {
+    position: absolute;
+    height: 4vh;
+    top: 14.5vh;
+    filter: invert(100%);
+}
+
+.intensityContainer .choicesContainer{
+    width: 95%;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 5%;
+    gap: 2vh;
+}
+
+.intensityContainer .choicesContainer div {
+    flex: 1;
+    height: 100%;
+    background-size: cover;
+    border-radius: 2.5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.intensityContainer .choicesContainer div:hover {
+    transform: scale(101%);
+}  
+
+.intensityContainer .choicesContainer div:nth-child(1) {
+    background-image: url("../images/choice-LW.png");
+}
+
+.intensityContainer .choicesContainer div:nth-child(2) {
+    background-image: url("../images/choice-KP.png");
+}
+
+.intensityContainer .choicesContainer div:nth-child(3) {
+    background-image: url("../images/choice-BM.png");
+}
+
+.intensityContainer .choicesContainer div h1 {
+    color: white;
+    position: absolute;
+    font-family: "InterExtraBold", sans-serif;
+    right: 7.5%;
+    top: 20%;
+    font-size: 4.25vw;
+    text-align: right;
+    z-index: 2;
+}
+
+.intensityContainer .choicesContainer div img {
+    position: absolute;
+    bottom: 0%;
+    z-index: 1;
+    left: 0%;
+    height: 100%;
+}
+
+.intensityContainer .choicesContainer div hr {
+    position: absolute;
+    bottom: 15%;
+    width: 54%;
+    height: .20vw;
+    border: none;
+    background-color: black;
+    right: 5%;
+}
+
+.intensityContainer .choicesContainer div h2 {  
+    color: black;
+    position: absolute;
+    top: 87.5%;
+    right: 5%;
+    font-size: 1.25vw;
+    z-index: 4;
+}
+
+.listContainer {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center; 
+    background: url("../images/list-background.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; /
+}
+
+.listContainer img:nth-child(1) {
+    width: 5vh;
+    position: absolute;
+    right: 5%;
+    top: 4%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.listContainer img:nth-child(2) {
+    width: 4vh;
+    position: absolute;
+    top: 4.25%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.listContainer .listHeaderContainer {
+    width: 100%;
+    height: 12.5%;
+    background-color: white;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 5);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    top: 0%;
+}
+
+.listContainer .listHeaderContainer h2{
+    position: absolute;
+    font-family: "InterBlack", sans-serif;
+    font-size: 3vh;
+    bottom: 10%;
+}
+
+.listContainer .daysContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 30vh);
+    gap: 3vh;
+    position: relative;
+    top: 5%;
+    justify-content: center;
+}
+
+.listContainer .daysContainer div span {
+    writing-mode: vertical-lr;
+    white-space: nowrap;
+    font-size: 3vh;
+}
+
+.listContainer .daysContainer div {
+    width: 30vh;
+    height: 30vh;
+    background-color: white;
+    backdrop-filter: blur(1vh);
+    box-shadow: 0px 0px 5vh rgba(0, 0, 0, 5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family: "InterBlack", sans-serif;
+    font-size: 10vh;
+}
+
+.listContainer .daysContainer div:hover {
+    transform: scale(102%);
+} 
+
+.listContainer .resetContainer {
+    width: 100%;
+    height: 12.5%;
+    background-color: white;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    top: 0%;
+    gap: 1vh;
+    z-index: 1;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.listContainer .resetContainer h2{
+    position: absolute;
+    font-family: "InterBlack", sans-serif;
+    font-size: 3vh;
+    top: 20%;
+}
+
+.listContainer .resetContainer button{
+    position: relative;
+    font-family: "InterBold", sans-serif;
+    height: 4.5vh;   
+    font-size: 2.25vh; 
+    top: 55%;
+    cursor: pointer;
+    border: none;
+}
+
+.listContainer .resetContainer button:nth-child(2) {
+    width: 10vh;
+    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
+}
+
+.listContainer .resetContainer button:nth-child(3) {
+    width: 20vh;
+    background-color: #00A3FF;
+    color: white;
+}
+
+.exerciseContainer {
+    width: 100vw;
+    display: none;  
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    position: relative;
+}
+
+.exerciseContainer .exerciseHeaderContainer {
+    width: 100vh;
+    height: 25vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/exercise-background.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 2.5vh;
+    border-radius: 2.5px;
+}
+
+.exerciseContainer .exerciseHeaderContainer h2{
+    position: absolute;
+    font-family: "InterBlack", sans-serif;
+    color: rgb(223, 223, 223);
+    left: 7.5%;
+}
+
+.exerciseContainer .exerciseHeaderContainer h2:nth-child(2) {
+    bottom: 40%;
+    font-size: 4vh;
+}
+
+.exerciseContainer .exerciseHeaderContainer h2:nth-child(1) {
+    bottom: 15%;
+    font-size: 6vh;
+}
+
+.exerciseContainer .exerciseDivContainer {
+    width: 100vh;
+    margin: 2.5vh 0 2.5vh 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    row-gap: 1vh;
+}
+
+.exerciseContainer .exerciseDivContainer div:not(.restDay){
+    height: 15vh;
+    width: 100%;
+    background-color: white;
+    border-radius: 2.5px;
+    font-family: "InterExtraBold", sans-serif;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.exerciseContainer .exerciseDivContainer div:not(.restDay) h1 {
+    position: relative;
+    width: 45%;
+    left: 42.5%;
+    font-size: 3vh;
+    text-align: left;
+}
+
+.exerciseContainer .exerciseDivContainer div:not(.restDay) h2 {
+    font-size: 2.5vh;
+    opacity: 75%;
+    position: relative;
+    left: 42.5%;
+    width: 15%;
+    text-align: left;
+}
+
+.exerciseContainer .exerciseDivContainer div:not(.restDay) img:nth-child(3) {
+    height: 30%;
+    position: absolute;
+    left: 3%;
+    opacity: 75%;
+    cursor: pointer;
+}
+
+.exerciseContainer .exerciseDivContainer div:not(.restDay) img:nth-child(4) {
+    position: absolute;
+    height: 77.5%;
+    left: 16%;
+}
+
+.exerciseContainer .exerciseButtonContainer {
+    bottom: 0%;
+    height: 8vh;
+    margin-bottom: 5vh;
+    width: 100vh;
+    position: relative;
+}
+
+.exerciseContainer .exerciseButtonContainer button{
+    height: 100%;
+    font-family: "InterBLACK", sans-serif;  
+    font-size: 3vh; 
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 2.5px;
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/exercise-background.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.exerciseContainer .exerciseButtonContainer button:nth-child(1){
+    width: 30%;
+    position: absolute;
+    left: 0%;
+    color: white;
+}
+
+.exerciseContainer .exerciseButtonContainer button:nth-child(2) {
+    width: 40%;
+    position: absolute;
+    right: 0%;
+    color: white;
+    filter: invert(100%);
+}
+
+.disable {
+    pointer-events: none;
+}
+
+.popUpContainer {
+    box-shadow: 0 -100vh 100vh 100vh rgba(0, 0, 0, .5);
+    position: fixed;
+    width: 100vw;
+    height: 85vh;
+    background-color:white;
+    bottom: 0%;
+    display: none;
+    justify-content: center;
+    z-index: 1;
+    transform: translateY(120%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.popUpContainer img {
+    position: absolute;
+    top: 2%;
+    width: 70vh;
+    border-radius: 2.5px;
+}
+
+.popUpContainer h1 {
+    font-family: "InterExtraBold", sans-serif;
+    position: absolute;
+    top: 65%;
+    font-size: 5vh;
+    width: 70vh;
+    text-align: left;
+}
+
+.popUpContainer p {
+    font-family: "InterRegular", sans-serif;
+    position: absolute;
+    top: 73%;
+    font-size: 1.85vh;
+    width: 70vh;
+    text-align: left;
+}
+
+.popUpContainer hr {
+    position: absolute;
+    height: .25vh;
+    background-color: black;
+    border: none;
+    opacity: 75%;
+    bottom: 2.7%;
+    width: 70vh;
+}
+
+.popUpContainer h2 {
+    font-family: "InterBold", sans-serif;
+    position: absolute;
+    bottom: 2%;
+    font-size: 1.25vh;
+    width: 20vh;
+    text-align: center;
+    background-color: white;
+}
+
+.restDay {
+    background-color: white;
+    width: 100vh;
+    height: 52.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.restDay img {
+    height: 55%;
+    position: relative;
+    bottom: 4%;
+}
+
+.restDay h2 {
+    font-family: "InterRegular", sans-serif;
+    font-size: 2.25vh;
+    bottom: 40%;
+    opacity: 75%;
+}
+
+.doneContainer {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.doneContainer img{
+    height: 55%;
+}
+
+.doneContainer h1{
+    font-family: "InterBold", sans-serif;
+    font-size: 3.75vh;
+}
+
+.doneContainer h2{
+    font-family: "InterSemiBold", sans-serif;
+    font-size: 2vh;
+    position: absolute;
+    bottom: 3%;
+    background-color: white;
+    width: 30vh;
+    text-align: center;
+    color: #868686;
+}
+
+.doneContainer hr {
+    position: absolute;
+    height: .25vh;
+    background-color: #868686;
+    border: none;
+    opacity: 75%;
+    bottom: 4%;
+    width: 95vh;
+    opacity: 75%;
+}
+
+
+@media (max-width: 1100px) {
+    .startContainer {  
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .startContainer div {
+        height: 72vw;
+        width: 72vw;
+    }
+
+    .startContainer div h1:nth-child(1) {
+        font-size: 4vw;
+    }
+
+    .startContainer div h1:nth-child(2) {
+        font-size: 13vw;
+        top: 13%;
+    }
+
+    .startContainer div h1:nth-child(3) {
+        font-size: 6vw;
+        top: 30%;
+    }
+
+    .startContainer div h1:nth-child(4) {
+        font-size: 8vw;
+        top: 37%;
+    }
+
+    .startContainer h2 {
+        font-size: 4vw;
+        position: relative;
+        top: 1vh;
+    }
+
+    .startContainer button {
+        border-radius: 5vw;
+        height: 7vw;
+        font-size: 2.5vw;
+        width: 45vw;
+        top: 3vw;
+    }   
+
+    .sexContainer {
+        flex-direction: column;
+        gap: 7.5vh;
+    }
+
+    .sexContainer h2 {
+        font-size: 2vh;
+    }
+
+    .sexContainer img:nth-child(1) {
+        height: 3.5vh;
+        top: 16vh;
+    }
+    
+    .sexContainer div {
+        height: 23vh;
+        width: 40vh;
+        top: 6%;
+    }
+    
+    .sexContainer div:nth-child(4) {
+        margin-left: 0%;
+    }
+    
+    .sexContainer div:nth-child(5) {
+        margin-right: 0%;
+    }
+    
+    .sexContainer img:nth-child(2) {
+        top: 8%;
+        left: 6%;
+        width: 3vh;
+    }
+    
+    .sexContainer div h1 {
+        left: 50%;
+        bottom: 9%;
+        z-index: 1;
+        font-size: 3vh;
+    }   
+    
+    .intensityContainer img:nth-child(1) {
+        top: 8%;
+        left: 6%;
+        width: 3vh;
+    }
+    
+    .intensityContainer h2 {
+        font-size: 2vh;
+    }
+
+    .intensityContainer img:nth-child(2) {
+        height: 3.25vh;
+        top: 15.5vh;
+    }
+
+    .intensityContainer .choicesContainer{
+        width: 40vh;
+        height: 70vh;
+        top: 10%;
+        position: relative;
+        flex-direction: column;
+    }
+    
+    .intensityContainer .choicesContainer div {
+        flex: 1;
+        width: 100%;
+    }
+    
+    .intensityContainer .choicesContainer div h1 {
+        font-size: 5vh;
+    }
+    
+    .intensityContainer .choicesContainer div hr {
+        height: .20vh;
+    }
+    
+    .intensityContainer .choicesContainer div h2 {  
+        font-size: 1.25vh;
+    }
+    
+    .listContainer {
+        overflow: hidden;
+    }
+
+    .listContainer img:nth-child(1) {
+        width: 4.5vh;
+        right: 6%;
+        top: 5%;
+        z-index: 1;
+    }
+
+    .listContainer img:nth-child(2) {
+        width: 3vh;
+        top: 6%;
+    }
+    
+    .listContainer .listHeaderContainer h2{
+        font-size: 2vh;
+    }
+    
+    .listContainer .daysContainer {
+        grid-template-columns: repeat(2, 17.5vh);
+        gap: 2vh;
+        top: 5%;
+    }
+    
+    .listContainer .daysContainer div {
+        width: 17.5vh;
+        height: 17.5vh;
+        font-size: 6vh;
+    }
+
+    .listContainer .daysContainer div span {
+        font-size: 2.25vh;
+    }
+    
+    .listContainer .resetContainer h2{
+        font-size: 2vh;
+        top: 30%;
+    }
+    
+    .listContainer .resetContainer button{
+        height: 4vh;   
+        font-size: 2vh; 
+    }
+    
+    .listContainer .resetContainer button:nth-child(2) {
+        width: 7.5vh;
+    }
+    
+    .listContainer .resetContainer button:nth-child(3) {
+        width: 15vh;
+    }
+    
+    .exerciseContainer .exerciseHeaderContainer {
+        width: 42.5vh;
+        height: 15vh;
+    }
+    
+    .exerciseContainer .exerciseHeaderContainer h2:nth-child(2) {
+        bottom: 35%;
+        font-size: 1.75vh;
+    }
+    
+    .exerciseContainer .exerciseHeaderContainer h2:nth-child(1) {
+        font-size: 3vh;
+    }
+    
+    .exerciseContainer .exerciseDivContainer {
+        width: 42.5vh;
+        margin: 1.5vh 0 1.5vh 0;
+    }
+    
+    .exerciseContainer .exerciseDivContainer div:not(.restDay){
+        height: 7.5vh;
+    }
+
+    .exerciseContainer .exerciseDivContainer div:not(.restDay) h1 {
+        font-size: 1.5vh;
+    }
+    
+    .exerciseContainer .exerciseDivContainer div:not(.restDay) h2 {
+        font-size: 1vh;
+    }
+
+    .exerciseContainer .exerciseButtonContainer {
+        bottom: 0%;
+        height: 4vh;
+        margin-bottom: 5vh;
+        width: 42.5vh;
+    }
+    
+    .exerciseContainer .exerciseButtonContainer button{ 
+        font-size: 1.25vh; 
+    }
+
+    .popUpContainer {
+        width: 100vw;
+        height: 85vh;
+    }
+    
+    .popUpContainer img {
+        width: 42.5vh;
+    }
+    
+    .popUpContainer h1 {
+        top: 42.5%;
+        font-size: 2.5vh;
+        width: 42.5vh;
+    }
+    
+    .popUpContainer p {
+        top: 47.5%;
+        font-size: 1.25vh;
+        width: 42.5vh;
+    }
+    
+    .popUpContainer hr {
+        height: .15vh;
+        bottom: 4.15%;
+        width: 42.5vh;
+    }
+    
+    .popUpContainer h2 {
+        bottom: 3vh;
+        font-size: 1vh;
+        width: 17.5vh;
+    }
+    
+    .restDay {
+        width: 42.5vh;
+        height: 40vh;
+    }
+
+    .restDay img {
+        height: 35%;
+    }
+
+    .restDay h2 {
+        font-size: 1.25vh;
+    }
+    
+    .doneContainer img{
+        height: 20%;
+    }
+    
+    .doneContainer h1{
+        font-size: 1.5vh;
+    }
+    
+    .doneContainer h2{
+        bottom: 3.6vh;
+        font-size: 1vh;
+        width: 15vh;
+    }
+    
+    .doneContainer hr {
+        height: .15vh;
+        bottom: 4.15vh;
+        width: 40vh;
+    }
+    
+}
+
+@media (max-width: 750px) {
+
+    .disclaimerContainer div:nth-child(1) {
+        margin: 0 10vw 0 10vw;
+        flex: 1;
+    }
+    
+    .disclaimerContainer div h2 {
+        font-size: 3vh;
+    }
+    
+    .disclaimerContainer div p {
+        font-size: 2vh;
+    }
+    
+    .disclaimerContainer div span {
+        font-size: 3vh;
+    }
+
+    .disclaimerContainer div:nth-child(2) {
+        display: none;
+    }
+
+    .disclaimerContainer div:nth-child(1) div button {
+        border-radius: 5vh;
+        height: 3.5vh;
+        font-size: 1.25vh;
+        text-align: center;
+        position: relative;
+    }
+
+    .infoContainer img {
+        top: 8%;
+        left: 6%;
+        width: 3vh;
+    }
+    
+    .infoContainer h2 {
+        font-size: 2vh;
+    }
+    
+    .infoContainer button:nth-child(3) {
+        top: 8%;
+        right: 6%;
+        font-size: 2.75vh;
+    }
+    
+    .infoContainer p {
+        font-size: 2vh;
+    }
+    
+    .infoContainer form {
+        width: 47.5vh;
+    }
+    
+    .infoContainer label {
+        font-size: 2.25vh;
+    }
+    
+    .infoContainer input {
+        font-size: 1.75vh;
+    }
+    
+    .infoContainer button:last-child {
+        height: 5vh;
+        font-size: 1.5vh;
+        width: 32.5vh;
+    }
+}
