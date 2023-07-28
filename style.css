@@ -954,6 +954,7 @@ body::-webkit-scrollbar{
     .intensityContainer img:nth-child(2) {
         height: 3.25vh;
         top: 15.5vh;
+        
     }
 
     .intensityContainer .choicesContainer{
